@@ -1,0 +1,48 @@
+# gradle
+
+.gradle/
+build/
+out/
+classes/
+
+# 临时调试文件（不应提交到仓库）
+CommonPoolTest.java
+GatewayTest.java
+
+# eclipse
+
+*.launch
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
+# macos
+
+*.DS_Store
+
+# fabric
+
+run/
+
+# java
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
+# 敏感配置（真实密钥只在本机，绝不提交）
+config/mcqqbridge.json
+release/mcqqbridge.example.json
