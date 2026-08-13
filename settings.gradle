@@ -1,0 +1,18 @@
+pluginManagement {
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+// 允许 Gradle 通过 Toolchain 自动下载所需 JDK（本项目的 MC 26.2 需要 JDK 25）
+plugins {
+	id 'org.gradle.toolchains.foojay-resolver-convention' version '0.9.0'
+}
+
+// Should match your modid
+rootProject.name = 'mcqqbridge'
