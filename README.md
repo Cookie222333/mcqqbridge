@@ -1,13 +1,20 @@
 # MCQQBridge
 
-**Minecraft ↔ QQ 官方机器人消息互通模组（Fabric）**
+**Minecraft ↔ QQ 官方机器人消息互通**
 
 让 Minecraft 游戏内的聊天与 QQ 群聊 / 单聊（私聊）消息互相转发，支持从 QQ 远程查询服务器状态、执行自定义 MC 命令，并转发玩家进出 / 死亡等状态通知。
 
-- 目标版本：**Minecraft 26.2**（"Chaos Cubed"）
-- 加载器：**Fabric Loader 0.19.3+**
-- 依赖：**Fabric API 0.157.0+26.2**
-- 语言：**Java 25**（JDK 25+）
+## 📦 支持版本
+
+本项目提供两种服务端支持：
+
+| 版本 | 说明 | 目录 |
+|------|------|------|
+| **Fabric 模组** | Minecraft 26.2 + Fabric Loader 0.19.3+ | 仓库根目录 |
+| **Paper 插件** | Minecraft 26.2 + Paper 26.2 服务端 | [`paper/`](paper/) |
+
+- **Fabric 版**：`build/libs/mcqqbridge-1.0.0.jar`（放入 `mods/`）
+- **Paper 版**：[`paper/mcqqbridge-paper-1.0.0.jar`](paper/mcqqbridge-paper-1.0.0.jar)（放入 `plugins/`）
 
 > QQ 官方机器人（QQ 开放平台）接入：通过 OAuth 获取 Access Token，使用 WebSocket Gateway 长连接接收消息事件，使用 REST API 发送消息。
 
