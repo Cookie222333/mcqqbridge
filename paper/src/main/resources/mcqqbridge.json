@@ -1,0 +1,41 @@
+{
+  "enabled": true,
+  "app_id": "在此填写你的 QQ 机器人 AppID",
+  "client_secret": "在此填写你的 QQ 机器人 AppSecret",
+  "qq_to_mc": {
+    "enabled": true,
+    "groups": [],
+    "accept_group_at": true,
+    "accept_group_message": true,
+    "accept_private_message": true,
+    "format": "{sender}: {message}"
+  },
+  "mc_to_qq": {
+    "enabled": true,
+    "target_groups": [
+      "在此填写目标群的 group_openid，例如 B2C3D4E5F6A1B2C3D4E5F6A1B2C3D4E5"
+    ],
+    "forward_chat": true,
+    "forward_game_message": false,
+    "forward_join_leave": true,
+    "forward_death": true,
+    "forward_command_message": false,
+    "format": "[MC] {player}: {message}"
+  },
+  "mc_broadcast_prefix": "[QQ]",
+  "qq_command_prefix": "/mc",
+  "qq_commands": [
+    {
+      "command": "list",
+      "mc_command": "/list",
+      "description": "查看 MC 在线玩家列表",
+      "timeout_ms": 3000
+    },
+    {
+      "command": "seed",
+      "mc_command": "/seed",
+      "description": "查看世界种子",
+      "timeout_ms": 3000
+    }
+  ]
+}
